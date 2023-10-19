@@ -13,9 +13,8 @@ repos:
       - id: black
         name: Formatting (black)
         entry: black
-        language: python
-        types_or: [python, pyi, jupyter]
-        additional_dependencies: [".[jupyter]"]
+        types: [python]
+        language: system
       - id: isort
         name: Sorting imports (isort)
         entry: isort
@@ -25,5 +24,11 @@ repos:
         name: Linting (ruff)
         entry: ruff
         types: [python]
+        language: system
+      - id: nbstripout
+        name: Strip Jupyter notebook output (nbstripout)
+        entry: nbstripout
+        types: [file]
+        files: (.ipynb)$
         language: system
 exclude: ^(.svn|CVS|.bzr|.hg|.git|__pycache__|.tox|.ipynb_checkpoints|assets|tests/assets/|venv/|.venv/)
