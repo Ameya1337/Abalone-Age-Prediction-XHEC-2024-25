@@ -13,9 +13,8 @@ repos:
       - id: black
         name: Formatting (black)
         entry: black
-        language: python
-        types_or: [python, pyi, jupyter]
-        additional_dependencies: [".[jupyter]"]
+        types: [python]
+        language: system
       - id: isort
         name: Sorting imports (isort)
         entry: isort
