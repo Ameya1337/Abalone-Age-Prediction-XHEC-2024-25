@@ -146,18 +146,6 @@ Once the Docker container is up and running, you can access the API documentatio
 
 This will return the predicted age of the abalone based on the input features.
 
-## Model Training
-
-*(Content to be added)*
-
-This section will describe how to train the model, including the commands and steps to train it inside or outside the Docker container.
-
-## MLflow Integration
-
-*(Content to be added)*
-
-This section will describe the integration with MLflow for tracking experiments and visualizing model performance metrics.
-
 ## Project Structure
 
 The project is organized as follows:
