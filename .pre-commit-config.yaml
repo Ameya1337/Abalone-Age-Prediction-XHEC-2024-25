@@ -22,9 +22,9 @@ repos:
         language: system
       - id: ruff
         name: Linting (ruff)
-        entry: ruff
+        entry: ruff check
         types: [python]
-        language: system
+        language: python
       - id: nbstripout
         name: Strip Jupyter notebook output (nbstripout)
         entry: nbstripout
