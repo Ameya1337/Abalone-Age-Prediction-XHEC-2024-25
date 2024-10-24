@@ -23,3 +23,6 @@ scipy
 
 # Simple logging
 loguru
+
+# Workflow orchestration
+prefect
