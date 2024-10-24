@@ -6,7 +6,7 @@ import scipy
 from prefect import task
 from sklearn.feature_extraction import DictVectorizer
 
-CATEGORICAL_COLS = ["Sex"]
+CATEGORICAL_COLS: List[str] = ["Sex"]
 
 
 def filter_outliers(

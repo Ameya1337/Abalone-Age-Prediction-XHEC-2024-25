@@ -1,7 +1,7 @@
 # MODELS
 PATH_TO_PREPROCESSOR = "src/web_service/local_objects/dv.pkl"
 PATH_TO_MODEL = "src/web_service/local_objects/model.pkl"
-CATEGORICAL_VARS = ["Sex"]
+CATEGORICAL_VARS: List[str] = ["Sex"]
 
 
 # MISC
