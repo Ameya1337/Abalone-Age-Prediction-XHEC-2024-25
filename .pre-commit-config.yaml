@@ -24,12 +24,6 @@ repos:
         name: Linting (ruff)
         entry: ruff check
         types: [python]
-        language: python
-      - id: nbstripout
-        name: Strip Jupyter notebook output (nbstripout)
-        entry: nbstripout
-        types: [file]
-        files: (.ipynb)$
         language: system
       - id: nbstripout
         name: Strip Jupyter notebook output (nbstripout)
