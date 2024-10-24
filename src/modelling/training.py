@@ -1,9 +1,11 @@
 import numpy as np
 import scipy
+from prefect import task
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import root_mean_squared_error
 
 
+@task
 def train_model(X: scipy.sparse.csr_matrix, y: np.ndarray) -> LinearRegression:
     """
     Train a linear regression model on the given training data.
