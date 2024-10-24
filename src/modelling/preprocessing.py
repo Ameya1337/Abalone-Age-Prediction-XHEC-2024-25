@@ -3,8 +3,8 @@ from typing import List, Tuple
 import numpy as np
 import pandas as pd
 import scipy
-from sklearn.feature_extraction import DictVectorizer
 from prefect import task
+from sklearn.feature_extraction import DictVectorizer
 
 CATEGORICAL_COLS = ["Sex"]
 
@@ -51,6 +51,7 @@ def extract_x_y(
     x = dv.transform(dicts)
     return x, y, dv
 
+
 @task
 def process_data(
     df: pd.DataFrame, dv=None, with_target: bool = True
@@ -69,7 +70,6 @@ def process_data(
 
         return extract_x_y(df3, dv=dv)
     else:
-
         df2 = encode_categorical_cols(df)
 
         return extract_x_y(df2, dv=dv, with_target=with_target)
