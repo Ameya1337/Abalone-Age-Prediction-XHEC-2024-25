@@ -235,7 +235,7 @@ pytz==2024.2
     #   dateparser
     #   pandas
     #   prefect
-pywin32==308
+pywin32==307
     # via docker
 pyyaml==6.0.2
     # via
