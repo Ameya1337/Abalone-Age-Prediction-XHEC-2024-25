@@ -141,3 +141,37 @@ This will guarantee that your code is formatted correctly and of good quality be
 ```bash
 pip-compile requirements.in
 ```
+
+
+## Setting Up the Environment
+
+To set up the environment for this project, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Abalone-Age-Prediction-XHEC-2024-25.git
+   cd Abalone-Age-Prediction-XHEC-2024-25
+   ```
+
+2. **Create a Virtual Environment**:
+   - Using `venv`:
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+     ```
+
+   - Using `conda`:
+     ```bash
+     conda env create --file=environment.yml
+     conda activate abalone
+     ```
+3. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Install Pre-commit Hooks**:
+   ```bash
+   pip install pre-commit
+   pre-commit install
+   ```
