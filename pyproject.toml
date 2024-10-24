@@ -5,17 +5,33 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "xhec-mlops-project-student"
 authors = [
-  { name = "username", email = "user@email.com" },
-] # TODO: add authors here
+  { name = "Ameya1337", email = "ameya.kulkarni1@hec.edu" },
+  { name = "Jaaack99", email = "giacomo.lustri@hec.edu" },
+  { name = "NacerH0", email = "nacerhadni@hotmail.fr" },
+  { name = "Fmansilla10", email = "felipe.mansilla@hec.edu"},
+  { name = "schronic", email = "nicolas.schroeder@hec.edu"}
+]
 description = "This repository contains the solution for the X-HEC MLOps Project on the industrialization of Abalone age prediction model."
 version = "0.0.1"
 readme = "README.md"
-requires-python = ">3.10" # TODO: update this version
+requires-python = "3.12"
 
 [project.urls]
-"Homepage" = "https://github.com/artefactory/xhec-mlops-project-student" # TODO: update this URL
+"Homepage" = "https://github.com/Ameya1337/Abalone-Age-Prediction-XHEC-2024-25"
 
 [tool.setuptools]
 packages = ["src"]
 
-# TODO: add black, isort, and ruff (optional - not needed if using flake8) configurations here
+# Formatting and linting tools
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+# Configure Ruff to match Black's behavior
+line-length = 88
+select = ["E", "F", "C", "W"]
