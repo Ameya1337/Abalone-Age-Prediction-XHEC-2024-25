@@ -20,3 +20,6 @@ optuna
 
 # Miscellaneous (Optional but useful for numerical operations and data manipulation)
 scipy
+
+# Simple logging
+loguru
