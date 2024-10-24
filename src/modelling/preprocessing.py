@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import scipy
 from sklearn.feature_extraction import DictVectorizer
+from prefect import task
 
 CATEGORICAL_COLS = ["Sex"]
 
@@ -50,7 +51,7 @@ def extract_x_y(
     x = dv.transform(dicts)
     return x, y, dv
 
-
+@task
 def process_data(
     df: pd.DataFrame, dv=None, with_target: bool = True
 ) -> scipy.sparse.csr_matrix:

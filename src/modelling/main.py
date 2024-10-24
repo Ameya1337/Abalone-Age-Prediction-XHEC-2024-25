@@ -6,11 +6,11 @@ from preprocessing import process_data
 from training import train_model
 from utils import save_pickle
 
-
+@Flow
 def main(trainset_path: Path) -> None:
     """Train a model using the data at the given path and save the model (pickle)."""
     # Read data
-    csv_path = Path("../../data/abalone.csv")
+    csv_path = trainset_path
     df = pd.read_csv(csv_path)
     # Preprocess data
     x, y, dv = process_data(df)
