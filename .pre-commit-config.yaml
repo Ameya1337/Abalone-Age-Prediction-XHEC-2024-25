@@ -20,7 +20,7 @@ repos:
         entry: isort
         types: [python]
         language: system
-      - id: ruff # TODO - remove this if you chose not to use ruff (must have one of ruff or flake8)
+      - id: ruff
         name: Linting (ruff)
         entry: ruff check
         types: [python]
