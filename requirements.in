@@ -1,2 +1,25 @@
-# TODO - complete with requirements (pandas, sklearn etc...)
-# Then, execute "pip-compile requirements.in" to generate the file requirements.txt
+# Data manipulation and processing
+pandas
+numpy
+
+# Machine Learning models
+scikit-learn
+catboost
+xgboost
+lightgbm
+
+# Visualization
+matplotlib
+seaborn
+
+# Model persistence
+joblib
+
+# Hyperparameter optimization
+optuna
+
+# Miscellaneous (Optional but useful for numerical operations and data manipulation)
+scipy
+
+# Simple logging
+loguru

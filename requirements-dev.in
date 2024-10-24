@@ -1,0 +1,18 @@
+# Code formatting
+black
+
+# Linting
+ruff
+nbstriptout
+
+# Type checking
+pydantic
+
+# Code complexity checking
+radon
+
+# Pre-commit hooks for ensuring consistency in code before commits
+pre-commit
+
+# Auto-import sorting
+isort
