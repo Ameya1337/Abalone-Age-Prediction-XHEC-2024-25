@@ -85,6 +85,28 @@ Follow these steps to set up the environment:
     pre-commit install
     ```
 
+### Set up a Regular Training Pipeline Using Prefect
+
+1. **Start the Prefect Server**
+   - Run the following command to start the Prefect server:
+     ```bash
+     prefect server start
+     ```
+
+2. **Deploy the Training Flow**
+   - Use the following command to deploy the training flow:
+     ```
+     prefect src/modelling/main.py
+     ```
+
+3. **Configure and Verify the Schedule**
+   - Visit [Prefect Dashboard](http://localhost:4000/).
+   - Navigate to the "Deployments" section.
+   - On the right side of the screen, toggle the 'Schedule' on.
+   - Verify just below that the training is set to rerun everyday at midnight.
+
+
+
 ### Using Docker
 
 To run the API inside a Docker container:
